@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1 id="my_projects">Projects</h1>
     <b-card class="mb-2" id="q1">
       <h1>7 Jumbled Words</h1>
       <img src="../assets/q1.png" alt="7 Jumbled Words" class="col-md-12">
@@ -85,6 +86,18 @@ a {
   color: #42b983;
 }
 
+#my_projects {
+  background: linear-gradient(
+      rgba(85, 25, 181, 1),
+      rgba(91, 192, 222, 1)
+    );
+  /*background-color: #5519B5;*/
+  margin: 0;
+  padding: 50px 0;
+  color: #FFF;
+  font-size: 5em;
+}
+
 h1 {
   font-size: 4em;
   font-family: 'Oleo Script Swash Caps', 'Helvetica Neue', sans-serif;
@@ -92,6 +105,8 @@ h1 {
 }
 
 #q1 {
+  /*border top is allowing card and projects h1 to combine seamlessly*/
+  border-top: none;
   background-color: #5BC0DE;
 }
 
