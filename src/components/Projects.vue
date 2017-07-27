@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 id="my_projects">Projects</h1>
+    <h1 id="projects">Projects</h1>
     <b-card class="mb-2" id="q1">
       <h1>7 Jumbled Words</h1>
       <img src="../assets/q1.png" alt="7 Jumbled Words" class="col-md-12">
@@ -10,7 +10,7 @@
       </div>
       <div class="github">
         <h4>Github</h4>
-        <a href="https://github.com/lnamba/Quarter1_Project_WordGame"><img src="../assets/GitHub.png" alt="GitHub"></a>
+        <a href="https://github.com/lnamba/Quarter1_Project_WordGame"><img src="../assets/GitHub-black.png" alt="GitHub"></a>
       </div>
     </b-card>
 
@@ -23,7 +23,7 @@
       </div>
       <div class="github">
         <h4>Github</h4>
-        <a href="https://github.com/lnamba/Q2-My-Version"><img src="../assets/GitHub.png" alt="GitHub"></a>
+        <a href="https://github.com/lnamba/Q2-My-Version"><img src="../assets/GitHub-black.png" alt="GitHub"></a>
       </div>
    </b-card>
 
@@ -36,7 +36,7 @@
     </div> -->
      <div class="github">
        <h4>Github</h4>
-       <a href="https://github.com/lnamba/thinkplan"><img src="../assets/GitHub.png" alt="GitHub"></a>
+       <a href="https://github.com/lnamba/thinkplan"><img src="../assets/GitHub-black.png" alt="GitHub"></a>
      </div>
    </b-card>
 
@@ -49,7 +49,7 @@
      </div>
      <div class="github">
        <h4>Github</h4>
-       <a href="https://github.com/lnamba/g47-Capstone-Project"><img src="../assets/GitHub.png" alt="GitHub"></a>
+       <a href="https://github.com/lnamba/g47-Capstone-Project"><img src="../assets/GitHub-black.png" alt="GitHub"></a>
      </div>
   </b-card>
   </div>
@@ -156,6 +156,11 @@ h1 {
 }
 
 .github {
-  margin-bottom: 50px;
+  margin: 50px 0 10px 0;
 }
+
+.github img {
+  height: 50px;
+}
+
 </style>

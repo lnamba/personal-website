@@ -5,7 +5,8 @@
       <h4>Software Engineer</h4>
     </div>
     <About></About>
-    <Projects id="projects"></Projects>
+    <Projects></Projects>
+    <Contact></Contact>
   </div>
 </template>
 
@@ -13,8 +14,7 @@
 import Vue from 'vue'
 import About from './About.vue'
 import Projects from './Projects.vue'
-
-// Vue.component('Projects', Projects)
+import Contact from './Contact.vue'
 
 export default {
   data () {
@@ -24,6 +24,7 @@ export default {
   components: {
     'About': About,
     'Projects': Projects,
+    'Contact': Contact,
   }
 }
 </script>
