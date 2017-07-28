@@ -6,6 +6,7 @@
     </div>
     <About></About>
     <Projects></Projects>
+    <Experience></Experience>
     <Contact></Contact>
   </div>
 </template>
@@ -14,6 +15,7 @@
 import Vue from 'vue'
 import About from './About.vue'
 import Projects from './Projects.vue'
+import Experience from './Experience.vue'
 import Contact from './Contact.vue'
 
 export default {
@@ -24,6 +26,7 @@ export default {
   components: {
     'About': About,
     'Projects': Projects,
+    'Experience': Experience,
     'Contact': Contact,
   }
 }
@@ -46,7 +49,7 @@ export default {
 }
 
 #home-jumbo h1 {
-  font-size: 5em;
+  font-size: 6em;
 }
 
 h1 {

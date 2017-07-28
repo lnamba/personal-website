@@ -5,7 +5,7 @@
       <b-nav-toggle target="nav_collapse"></b-nav-toggle>
 
       <b-link class="navbar-brand" to="#">
-        <router-link :to="{path: '/'}"><img id="brand" src="./assets/logo2.svg" alt="brand"></router-link>
+        <img id="brand" src="./assets/logo2.svg" alt="brand">
       </b-link>
 
       <b-collapse is-nav id="nav_collapse">
@@ -31,10 +31,12 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Metrophobic|Oleo+Script+Swash+Caps|Pavanam');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Metrophobic|Muli|Nunito');
+
   #app {
-    font-family: 'Pavanam', Helvetica, Arial, sans-serif;
     font-family: 'Metrophobic', Helvetica, Arial, sans-serif;
+    /*font-family: 'Muli', sans-serif;
+    font-family: 'Nunito', sans-serif;*/
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -45,9 +47,13 @@ export default {
     height: 50px;
   }
 
+  #name {
+    font-family: 'Oleo Script Swash Caps', Helvetica, Arial, sans-serif;
+  }
+
   h1 {
-    font-family: 'Oleo Script Swash Caps';
-    font-size: 4em;
+    font-family: 'Oleo Script Swash Caps', Helvetica, Arial, sans-serif;
+    font-size: 5em;
   }
 
   #heading {

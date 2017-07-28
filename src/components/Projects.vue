@@ -86,7 +86,7 @@ a {
   color: #42b983;
 }
 
-#my_projects {
+#projects {
   background: linear-gradient(
       rgba(85, 25, 181, 1),
       rgba(91, 192, 222, 1)
