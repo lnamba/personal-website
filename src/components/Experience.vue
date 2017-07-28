@@ -1,5 +1,5 @@
 <template lang="html">
-  <div>
+  <div id="exp_ed">
     <div id="experience">
       <h1>Experience</h1>
       <div class="row" v-for="role in roles">
@@ -88,12 +88,18 @@ export default {
 
 <style lang="css" scoped>
 
-  #experience {
-    margin: 50px 0;
+  #exp_ed {
+    background-color: #624AAF;
+    padding: 50px 0;
   }
 
-  #education {
+  #experience {
     margin-bottom: 50px;
+  }
+
+  h1 {
+    color: #FFF;
+    margin-bottom: 20px;
   }
 
   .role h3 {
@@ -105,6 +111,7 @@ export default {
 
   .mb-2 {
     margin: 0 auto;
+    background-color: #D8D2EB;
   }
 
 </style>

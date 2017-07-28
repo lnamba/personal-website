@@ -1,53 +1,17 @@
 <template>
-  <div>
+  <div id="exp_edu">
     <h1 id="projects">Projects</h1>
-    <b-card class="mb-2" id="q1">
-      <h1>7 Jumbled Words</h1>
-      <img src="../assets/q1.png" alt="7 Jumbled Words" class="col-md-12">
-      <h2 :style="{marginTop:20+'px'}">An addictive vocabulary puzzle for word nerds</h2>
+    <b-card class="mb-2" v-for="project in projects" :key="project.id" :id="'q'+project.id">
+      <h1>{{ project.title }}</h1>
+      <img :src="project.img_url" :alt="project.title" class="col-md-12">
+      <h2 :style="{marginTop:20+'px'}">{{ project.description }}</h2>
       <div class="demo">
-        <a href="https://g47-q1-project.herokuapp.com/" :style="{marginBottom:10+'px'}">VIEW DEMO</a>
+        <a :href="project.link" :style="{marginBottom:10+'px'}">VIEW DEMO</a>
       </div>
       <div class="github">
         <h4>Github</h4>
-        <a href="https://github.com/lnamba/Quarter1_Project_WordGame"><img src="../assets/GitHub-black.png" alt="GitHub"></a>
+        <a :href="project.github_url"><img src="../assets/GitHub-black.png" alt="GitHub"></a>
       </div>
-    </b-card>
-
-    <b-card class="mb-2" id="q2">
-      <h1>Let's Eat!</h1>
-      <img src="../assets/q2.png" alt="Let's Eat!" class="col-md-12">
-      <h2 :style="{marginTop:20+'px'}">A CRUD app allowing family members to suggest dinner for the night</h2>
-      <div class="demo">
-        <a href="https://g47-group-project.herokuapp.com/" :style="{marginBottom:10+'px'}">VIEW DEMO</a>
-      </div>
-      <div class="github">
-        <h4>Github</h4>
-        <a href="https://github.com/lnamba/Q2-My-Version"><img src="../assets/GitHub-black.png" alt="GitHub"></a>
-      </div>
-   </b-card>
-
-   <b-card class="mb-2" id="q3">
-     <h1>ThinkPlan</h1>
-     <img src="../assets/q3.png" alt="ThinkPlan" class="col-md-12">
-     <h2 :style="{margin:20+'px ' + 0}">A simple and clean lesson planning app for teachers</h2>
-     <div class="github">
-       <h4>Github</h4>
-       <a href="https://github.com/lnamba/thinkplan"><img src="../assets/GitHub-black.png" alt="GitHub"></a>
-     </div>
-   </b-card>
-
-   <b-card class="mb-2" id="q4">
-     <h1>Hanyu.co</h1>
-     <img src="../assets/q4.png" alt="Hanyu.co" class="col-md-12">
-     <h2 :style="{marginTop:20+'px'}">A Mandarin Chinese educational app that gamifies the language learning experience (collaboration with Spiffy Ventures)</h2>
-     <div class="demo">
-       <a href="https://g47-capstone.herokuapp.com/" :style="{marginBottom:10+'px'}">VIEW DEMO</a>
-     </div>
-     <div class="github">
-       <h4>Github</h4>
-       <a href="https://github.com/lnamba/g47-Capstone-Project"><img src="../assets/GitHub-black.png" alt="GitHub"></a>
-     </div>
     </b-card>
   </div>
 </template>
@@ -60,7 +24,35 @@ export default {
     return {
       projects: [
         {
-          // title:
+          id: 1,
+          title: '7 Jumbled Words',
+          img_url: require('../assets/q1.png'),
+          description: 'An addictive vocabulary puzzle for word nerds',
+          link: 'https://g47-q1-project.herokuapp.com/',
+          github_url: 'https://github.com/lnamba/Quarter1_Project_WordGame'
+        },
+        {
+          id: 2,
+          title: `Let's Eat!`,
+          img_url: require('../assets/q2.png'),
+          description: 'A CRUD app allowing family members to suggest dinner for the night',
+          link: 'https://g47-group-project.herokuapp.com/',
+          github_url: 'https://github.com/lnamba/Q2-My-Version'
+        },
+        {
+          id: 3,
+          title: 'ThinkPlan',
+          img_url: require('../assets/q3.png'),
+          description: 'A simple and clean lesson planning app for teachers',
+          github_url: 'https://github.com/lnamba/thinkplan'
+        },
+        {
+          id: 4,
+          title: 'Hanyu.co',
+          img_url: require('../assets/q4.png'),
+          description: 'A Mandarin Chinese educational app that gamifies the language learning experience (collaboration with Spiffy Ventures)',
+          link: 'https://g47-capstone.herokuapp.com/',
+          github_url: 'https://github.com/lnamba/g47-Capstone-Project'
         }
       ]
     }
@@ -70,23 +62,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 
 #projects {
   background: linear-gradient(
@@ -158,7 +133,7 @@ h1 {
 }
 
 .github {
-  margin: 50px 0 10px 0;
+  margin: 50px 0;
 }
 
 .github img {
