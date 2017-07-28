@@ -31,9 +31,6 @@
      <h1>ThinkPlan</h1>
      <img src="../assets/q3.png" alt="ThinkPlan" class="col-md-12">
      <h2 :style="{margin:20+'px ' + 0}">A simple and clean lesson planning app for teachers</h2>
-    <!-- <div class="demo">
-      <a href="https://g47-q1-project.herokuapp.com/" :style="{marginBottom:10+'px'}">VIEW DEMO</a>
-    </div> -->
      <div class="github">
        <h4>Github</h4>
        <a href="https://github.com/lnamba/thinkplan"><img src="../assets/GitHub-black.png" alt="GitHub"></a>
@@ -51,7 +48,7 @@
        <h4>Github</h4>
        <a href="https://github.com/lnamba/g47-Capstone-Project"><img src="../assets/GitHub-black.png" alt="GitHub"></a>
      </div>
-  </b-card>
+    </b-card>
   </div>
 </template>
 
@@ -61,6 +58,11 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 export default {
   data () {
     return {
+      projects: [
+        {
+          // title:
+        }
+      ]
     }
   }
 }
