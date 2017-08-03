@@ -1,6 +1,6 @@
 <template>
-  <div id="exp_edu">
-    <h1 id="projects">Projects</h1>
+  <div id="projects">
+    <h1 id="project_h1">Projects</h1>
     <b-card class="mb-2" v-for="project in projects" :key="project.id" :id="'q'+project.id">
       <h1>{{ project.title }}</h1>
       <img :src="project.img_url" :alt="project.title" class="col-md-10">
@@ -63,7 +63,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-#projects {
+#project_h1 {
   background: linear-gradient(
       rgba(85, 25, 181, 1),
       rgba(91, 192, 222, 1)

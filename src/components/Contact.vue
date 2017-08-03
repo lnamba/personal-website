@@ -3,7 +3,7 @@
     <div class="col-md-12">
       <h1>Contact</h1>
       <h4>Stay Connected.</h4>
-      <h2 id="email">lnnamba@gmail.com</h2>
+      <a href="mailto:lnnamba@gmail.com" id="email">lnnamba@gmail.com</a>
       <a href="https://github.com/lnamba"><img class="icon" src="../assets/GitHub.png" alt="GitHub"></a>
       <a href="https://www.linkedin.com/in/laurennamba/"><img class="icon" src="../assets/linkedin.png" alt="LinkedIn" id="in"></a>
     </div>
@@ -31,6 +31,8 @@ export default {
 
   #email {
     margin-top: 50px;
+    font-size: 2em;
+    display: block;
   }
 
   .icon {

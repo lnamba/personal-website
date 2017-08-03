@@ -42,7 +42,7 @@
         <h5>PostgreSQL</h5>
         <b-progress v-model="postgres" :precision="1" show-progress variant="success"></b-progress>
       </li> -->
-    </div>
+    <!-- </div> -->
   </div>
 </template>
 

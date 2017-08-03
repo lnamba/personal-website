@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <b-navbar toggleable type="inverse" variant="inverse">
+    <b-navbar toggleable type="inverse" variant="inverse" sticky>
 
       <b-nav-toggle target="nav_collapse"></b-nav-toggle>
 
@@ -11,9 +11,17 @@
       <b-collapse is-nav id="nav_collapse">
         <b-nav is-nav-bar>
           <b-nav-item id="name"><router-link :to="{ name: 'Home', params: {} }">Lauren Namba</router-link></b-nav-item>
-          <b-nav-item right><router-link :to="{ name: 'Projects', params: {} }">Projects</router-link></b-nav-item>
-          <b-nav-item right><router-link :to="{ name: 'Contact', params: {} }">Contact</router-link></b-nav-item>
         </b-nav>
+        <b-nav is-nav-bar class="ml-auto">
+          <b-nav-item-dropdown text="Take me to..." right>
+            <b-dropdown-item href="#about">About</b-dropdown-item>
+            <b-dropdown-divider></b-dropdown-divider>
+            <b-dropdown-item href="#projects" >Projects</b-dropdown-item>
+            <b-dropdown-divider></b-dropdown-divider>
+            <b-dropdown-item href="#experience">Experience & Education</b-dropdown-item>
+          </b-nav-item-dropdown>
+        </b-nav>
+
       </b-collapse>
     </b-navbar>
 
@@ -60,19 +68,28 @@ export default {
     font-size: 5em;
   }
 
-  a {
+  .nav-item a, .link {
     color: #FFF;
     font-size: 1.2em;
   }
 
-  a:hover, a:active {
+  .nav-item a:hover, .nav-item a:active,
+  .link:hover, .link:active {
     color: #AAA;
     text-decoration: none;
   }
 
-  a:focus {
+  .nav-item a:focus, .link:focus {
     color: #FFF;
     text-decoration: none;
+  }
+
+  .dropdown-menu a {
+    color: #000;
+  }
+
+  .dropdown-menu a:hover {
+    color: #FFF;
   }
 
 </style>
