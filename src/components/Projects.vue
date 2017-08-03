@@ -3,7 +3,7 @@
     <h1 id="projects">Projects</h1>
     <b-card class="mb-2" v-for="project in projects" :key="project.id" :id="'q'+project.id">
       <h1>{{ project.title }}</h1>
-      <img :src="project.img_url" :alt="project.title" class="col-md-12">
+      <img :src="project.img_url" :alt="project.title" class="col-md-10">
       <h2 :style="{marginTop:20+'px'}">{{ project.description }}</h2>
       <div class="demo">
         <a :href="project.link" :style="{marginBottom:10+'px'}">VIEW DEMO</a>
